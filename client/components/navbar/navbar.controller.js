@@ -5,7 +5,20 @@ angular.module('meanApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
-    }];
+    },
+    {
+        'title':'Achieve',
+        'link':'/achieve'
+    },
+    {
+        'title':'Message Board',
+        'link':'/message'
+    },
+    {
+        'title':'About Me',
+        'link':'/about'
+    }
+    ];
 
     $scope.isCollapsed = true;
 
