@@ -1,9 +1,15 @@
-footer.footer
-    div.container
-        p
-            | XL Blog
-            = ' | '
-            a(href='/') @XL
-            =' | '
-            | Based on &nbsp;
-            a(href='https://github.com/DaftMonk/generator-angular-fullstack') angular-fullstack
+footer#footer(ng-controller="FootCtrl")
+    .container
+        .row
+            .col-lg-4
+                h4 MY CONTACT
+                p ADDRESS:UESTC Chengdu China<br/> PHONE NUMBER 12345678 <br> EMAIL:zjlsxulei@gmail.com
+
+            .col-lg-4
+                h4 MY LINKS
+                p
+                    a(ng-repeat="item in links",href="{{item.link}}",target="_blank") {{item.title}} <br>
+
+            .col-lg-4
+                h4 ABOUT ME
+                p Welcome to contact me!

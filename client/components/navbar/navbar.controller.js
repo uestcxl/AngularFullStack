@@ -11,7 +11,7 @@ angular.module('meanApp')
         'link':'/achieve'
     },
     {
-        'title':'Message Board',
+        'title':'Message',
         'link':'/message'
     },
     {
