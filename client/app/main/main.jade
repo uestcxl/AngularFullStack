@@ -10,11 +10,4 @@ div(ng-include='"components/navbar/navbar.html"')
                 p   没有神，我孤独地生存
                 p   我就是我自己的神，在我活的地方
 
-.container.pt
-   .row.mt.centered
-       .col-lg-4(ng-repeat="item in works")
-           a.zoom.green(href="{{item.links}}")
-               img.img-responsive.img-circle(src="../../assets/images/portfolio/{{item.src}}",alt="{{item.title}}",title="{{item.title}}")
-            p   {{item.name}}
-
 div(ng-include='"components/foot/footer.html"')

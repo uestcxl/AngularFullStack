@@ -9,3 +9,4 @@ angular.module('meanApp')
         controller: 'MainCtrl'
       });
   });
+

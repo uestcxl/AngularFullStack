@@ -13,11 +13,13 @@
                 speed: 300
             };
 
-            var settings = $.extend(defaults, settings);
+            // var settings = $.extend(defaults, settings);
+            var settings=defaults;
 
-            return this.each(function() {
+            console.log('1');
+            return $('body').on('mouseover','.green',function(){
+                $(this).each(function() {
 
-                console.log('asdasd');
                 var s = settings;
                 var hz = $(this);
                 var image = $('img', hz);
@@ -63,6 +65,7 @@
                         });
                     });
                 });
+            });
             });
         }
     });
