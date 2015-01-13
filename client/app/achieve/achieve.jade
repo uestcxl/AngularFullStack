@@ -1,0 +1,38 @@
+div(ng-include='"components/navbar/navbar.html"')
+
+div(ng-controller='AchieveCtrl')
+    #grey
+        .container
+            .row
+                .col-lg-8.col-lg-offset-2
+                    p
+                        img.img-circle(src="../../assets/images/me.jpg",width="50px",height="50px")
+                        | <ba>XU LEI</ba>
+                    p
+                        bd  January 15,2015
+                    h4  We Are Going Home ~
+                    p
+                        b   Today
+                        |   We are going home soon.
+                    p
+                        a(href="/detail/1") Continue Reading...
+
+    #white
+        .container
+            .row
+                .col-lg-8.col-lg-offset-2
+                    p
+                        img.img-circle(src="../../assets/images/me.jpg",width="50px",height="50px")
+                        | <ba>XU LEI</ba>
+                    p
+                        bd  January 15,2015
+                    h4  We Are Going Home ~
+                    p
+                        img.img-responsive(src="../../assets/images/body1.jpg")
+                    p
+                        b   Today
+                        |   We are going home soon.
+                    p
+                        a(href="/detail/1") Continue Reading...
+
+div(ng-include='"components/foot/footer.html"')

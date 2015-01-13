@@ -3,11 +3,10 @@ div(ng-include='"components/navbar/navbar.html"')
 #ww(ng-controller="MainCtrl")
     .container
         .row
-            .col-lg-8.col-lg-offset-2.centered
+            .col-lg-10.col-lg-offset-1.centered
                 img.img-circle(src="../../assets/images/me.jpg")
-                //img.img-rounded(src="../../assets/images/me.jpg")
-                h1   HELLO WORLD !
-                p   没有神，我孤独地生存
-                p   我就是我自己的神，在我活的地方
+                h1   The quick brown fox jumps over the lazy dog
+                h1  {{clock}}
+                h1   没有神，我孤独地生存
 
 div(ng-include='"components/foot/footer.html"')

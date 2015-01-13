@@ -7,7 +7,29 @@
  * URL: http://blacktie.co
  */
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700); */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat-Regular'), url(../assets/font/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  }
+
+@font-face {
+    font-family: 'Arapey';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arapey Regular'), local('Arapey-Regular'), url(../assets/font/UxBNFr2ZgBqbuTISOIrpmw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  }
+
+@font-face {
+    font-family: 'Zephyr';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/font/ZephyrScriptFLF.ttf) format('truetype');
+  }
 
 body {
   	background-color: #ffffff;
@@ -20,17 +42,23 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+li{
+    list-style-type:none;
+}
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    letter-spacing:0.1em;
     color: #333;
 }
 
 h1 {
+    font-family: Zephyr;
 	font-size: 35px;
 	margin-top: 30px;
 	margin-bottom: 30px;
+    letter-spacing:0.2em;
 }
 
 
@@ -191,8 +219,10 @@ bd {
 
 /* Blog Author*/
 ba {
+    font-family:Zephyr;
 	font-size: 12px;
 	text-transform: uppercase;
+    padding-left:2em;
 }
 
 /* Blog Quote */

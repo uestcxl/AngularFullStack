@@ -8,15 +8,15 @@ angular.module('meanApp')
     },
     {
         'title':'Achieve',
-        'link':'/achieve'
+        'link':'achieve'
     },
     {
         'title':'Message',
-        'link':'/message'
+        'link':'message'
     },
     {
         'title':'About Me',
-        'link':'/about'
+        'link':'about'
     }
     ];
 
