@@ -11,10 +11,6 @@ angular.module('meanApp')
         'link':'achieve'
     },
     {
-        'title':'Message',
-        'link':'message'
-    },
-    {
         'title':'About Me',
         'link':'about'
     }

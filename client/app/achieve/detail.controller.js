@@ -9,5 +9,10 @@ angular.module('meanApp')
         $scope.passage.updateTime="2015-1-11 11:11:11";
         $scope.passage.files={};
         $scope.passage.title='test Passage';
-        $scope.passage.picture="";
+        $scope.passage.picture="body1.jpg";
+        $scope.passage.alt="Hello";
+        $scope.passage.tags=[
+            "Hello",
+            "world"
+        ]
     });

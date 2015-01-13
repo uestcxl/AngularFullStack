@@ -1,5 +1,23 @@
 div(ng-include='"components/navbar/navbar.html"')
 
 div(ng-controller='DetailCtrl')
+    #white.container
+        .row
+            .col-lg-8.col-lg-offset-2
+                p
+                    img.img-circle(src="../../assets/images/me.jpg",width="50px",height="50px")
+                    ba XU LEI
+                p
+                    bd  {{passage.createTime}}
+                p
+                    img.img-responsive(src="../../assets/images/{{passage.picture}}",alt="{{passage.alt}}")
+                p   {{passage.content}}
+                br
+                p
+                    bt  TAGS:
+                        a(ng-repeat="tag in passage.tags",href="/tags/{{tag}}") {{tag}}
+                hr
+                bt
+                    a(href="/achieve")  BACK
 
 div(ng-include='"components/foot/footer.html"')

@@ -35,4 +35,15 @@ div(ng-controller='AchieveCtrl')
                     p
                         a(href="/detail/1") Continue Reading...
 
+    .container
+        .row
+            .col-lg-8.col-lg-offset-2
+                nav.page
+                    ul.pagination
+                        li: a(href="#") &laquo;
+                        li: a(hred="#") 1
+                        li: a(hred="#") 2
+                        li: a(hred="#") 3
+                        li: a(hred="#") &raquo;
+
 div(ng-include='"components/foot/footer.html"')
