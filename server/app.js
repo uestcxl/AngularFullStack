@@ -12,6 +12,12 @@ var express = require('express');
 var mongoose = require('mongoose');
 var config = require('./config/environment');
 
+//use session to store the user
+var session=require('express-session');
+var MongoStore=require('connect-mongo')(session);
+
+
+
 // Connect to database
 mongoose.connect(config.mongo.uri, config.mongo.options);
 
